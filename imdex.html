@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio de Habilidades Web</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+
+        .gato{
+            display: flex;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        h2 {
+            color: darkred;
+            margin-top: 25px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        img {
+            max-width: 100px;
+            margin-right: 10px;
+        }
+
+        .foto-perfil {
+            border-radius: 50%;
+            max-width: 200px;
+        }
+
+        /* --- Estilos para o alinhamento dos vídeos --- */
+
+        /* 1. Estiliza e CENTRALIZA o vídeo local */
+        video {
+            display: block; /* Essencial para que margin: auto funcione */
+            margin: 20px auto; /* Centraliza horizontalmente e adiciona margem */
+            max-width: 100%; /* Garante que não ultrapasse a tela em dispositivos menores */
+            /* A regra 'border-right: 50;' foi removida por ser inválida */
+        }
+        
+        /* 2. Contêiner que ALINHA o iframe à direita usando Flexbox */
+        .container-iframe {
+            display: flex; /* Habilita o Flexbox */
+            justify-content: flex-end; /* Alinha o conteúdo (o iframe) à extrema direita */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Paola de Paula Oliveira- Desenvolvedora Front-End Júnior</h1>
+    <p>Olá! Meu nome é Paola de Paula Oliveira. Sou apaixonada por 💻 programação e iniciei este curso motivada pela vontade de aprender e criar meus próprios projetos ✨.</p>
+    <hr>
+
+    <h2>Sobre Mim</h2>
+    <p>
+        Sou estudante do SENAI, onde tenho aprendido bastante sobre desenvolvimento web &copy;. 
+        Durante as aulas, explorei conceitos fundamentais como HTML5, CSS3 &reg; e boas práticas de programação.
+    </p>
+    <p>
+        Minha jornada começou com curiosidade em entender como os sites funcionam por trás das telas. 
+        Hoje, já consigo criar páginas estruturadas e aplicar estilizações com CSS 💻.
+    </p>
+    <p>
+        No futuro, quero me tornar uma desenvolvedora profissional e contribuir para projetos que façam diferença ✨.
+    </p>
+
+    <img src="file:///C:/Users/0001150939/Documents/Vscode/meu-portifolio-web/Imagens/MEU%20AVATAR.jpg" width="200px" height="200px" alt="Minha foto de perfil" class="foto-perfil">
+
+    <h2>Minhas Habilidades em Client-Side</h2>
+    <ul>
+        <li><img src="file:///C:/Users/0001150939/Documents/Vscode/meu-portifolio-web/Imagens/HTML.png" width="100px" height="100px" alt="Logo HTML5"> Estruturação de Documentos HTML5</li>
+        <li><img src="file:///C:/Users/0001150939/Documents/Vscode/meu-portifolio-web/Imagens/CSS.png" width="100px" height="100px" alt="Logo CSS3"> Estilização Básica com CSS3</li>
+        <li>Otimização de Imagens para Web</li>
+        <li>Entendimento de Domínios e Hospedagem</li>
+        <li>Configuração de Ambiente de Desenvolvimento (VS Code)</li>
+    </ul>
+
+    <p>
+        Também estou estudando JavaScript: 
+        <img src="file:///C:/Users/0001150939/Documents/Vscode/meu-portifolio-web/Imagens/JAVASCRIPT.png" width="100px" height="100px" alt="Logo JavaScript">
+    </p>
+
+    <video controls> <source src="Imagens/videoplayback.mp4" type="video/mp4">
+        Seu navegador não suporta a tag de vídeo.
+    </video>
+
+    <br>
+
+    <div class="gato">
+        <table border="1">
+        <caption>Lista de funcionários com cargo, departamento e idade.</caption>
+        <thead>
+            <tr>
+            <th>Nome</th>
+            <th>Cargo</th>
+            <th>Departamento</th>
+            <th>Idade</th>
+            <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Silva</td>
+                <td >Desenvolvedora Front-end</td>
+                <td>TI</td>
+                <td>28</td>
+                <td>Ativo</td>
+            </tr>
+            <tr>
+                <td>Bruno Costa</td>
+                <td>Analista de Dados</td>
+                <td>BI</td>
+                <td>34</td>
+                <td>Em licença</td>
+            </tr>
+            <tr>
+                <td>Carla Ramos</td>
+                <td>UX Designer</td>
+                <td>Design</td>
+                <td>30</td>
+                <td>Ativo</td>
+            </tr>
+            <tr>
+                <td>Diego Alves</td>
+                <td>Gerente de Produto</td>
+                <td>Produto</td>
+                <td>40</td>
+                <td>Ativo</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+    <div class="container-iframe">
+        <iframe 
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/9DND9u4Owyc?si=uCH3L6CRlJNdSY5Q"
+            title="YouTube video player"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</body>
+</html>
